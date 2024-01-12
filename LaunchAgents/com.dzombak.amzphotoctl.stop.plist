@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.dzombak.amzphotoctl.stop</string>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>RUNNER_MAILTO</key>
+		<string>chris@dzombak.com</string>
+		<key>RUNNER_MAIL_FROM</key>
+		<string>runner@curie.cdzombak.net</string>
+		<key>RUNNER_MAIL_TAB_CHAR</key>
+		<string>        </string>
+		<key>RUNNER_SMTP_HOST</key>
+		<string>smtp.mailgun.org</string>
+		<key>RUNNER_SMTP_PASS</key>
+		<string>is a secret</string>
+		<key>RUNNER_SMTP_PORT</key>
+		<string>587</string>
+		<key>RUNNER_SMTP_USER</key>
+		<string>runner@curie.cdzombak.net</string>
+	</dict>
+	<key>LimitLoadToSessionType</key>
+	<string>Aqua</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/opt/homebrew/bin/runner</string>
+		<string>-job-name</string>
+		<string>com.dzombak.amzphotoctl.stop</string>
+		<string>-work-dir</string>
+		<string>/Users/cdzombak/code/amzphotoctl</string>
+		<string>--</string>
+		<string>./stop.sh</string>
+	</array>
+	<key>RunAtLoad</key>
+	<false/>
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Hour</key>
+		<integer>7</integer>
+		<key>Minute</key>
+		<integer>0</integer>
+	</dict>
+</dict>
+</plist>
