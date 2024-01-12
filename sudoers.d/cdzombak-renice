@@ -1,0 +1,1 @@
+cdzombak ALL=NOPASSWD: /usr/bin/renice
